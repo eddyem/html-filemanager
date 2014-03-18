@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=koi8-r">
+<title>Файлохранилище</title>
+<link rel="stylesheet" href="/style.css" type="text/css">
+<script src="pass.js" type="text/javascript" language="javascript"></script>
+<script src="filemanager.js" type="text/javascript" language="javascript"></script>
+</head>
+<body class='main' onLoad='get_content();'>
+<div id=top name=top__></div>
+<h3>Файл-менеджер</h3>
+<div style="position:fixed; top:5px; right:5px;"><button id="inout" onclick="inout();">Войти</button></div>
+<div class=fullwidth id='fmgr_'></div>
+<div class=fullwidth id='menu'>
+<button type='submit' OnClick='get_content();'>Reload</button>&nbsp;&nbsp;
+<button type='submit' OnClick='del_files();'>Delete file(s)</button>&nbsp;&nbsp;
+<span  id='mknewdir' style='display:none;'>
+	<input type=text id='newdir' size=50>
+	<button type='submit' OnClick='make_directory();'>OK</button>
+</span>
+<button type='submit' id='mkdirbtn' OnClick='chdirstat();'>Новая директория</button>
+</div>
+<p><p>
+<span id='loads'>
+<form name='file__' action='cgi-bin/gf' method='post' enctype='multipart/form-data' target='dummyframe'>
+<b>Загрузить файл</b>&nbsp;
+<input type=file id='filename' size=40 onChange='complete();'>
+</form>
+</span>
+<iframe name='dummyframe' width=50% frameborder=0 height=100>
+</iframe>
+</body>
+</html>

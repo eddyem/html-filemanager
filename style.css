@@ -1,0 +1,185 @@
+/********************* Ссылки: *******************/
+a	{
+	font-family: "Liberation Serif", Verdana, Arial;
+	font-size: 100%; font-weight: normal;
+	}
+
+a:link {color: green;} /* непосещенные ссылки*/
+a:visited {color: red;	} /* посещенные*/
+a:active {color: blue; } /* активные ссылки*/
+a:hover {font-weight: bold;} /* при наведении*/
+
+/* Ссылка-"кнопка" */
+a.button {
+	background: url(/images/button.png);
+	display: block; height: 40px; width: 100px;
+	}
+
+a.button:hover { /* нижняя часть рисунка - активная "кнопка"*/
+	color: blue;
+	background-position: 0px -40px;
+	}
+
+/********************* Основные настройки: *******************/
+/* html	{
+	height:100%;}*/
+
+body.main	{
+	padding: 1px; margin: 40px;
+	background: #CCD;
+	font-family: "Liberation Serif", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 20px;
+	}
+body.iframe	{
+	padding: 1px; background: #CCD;
+	font-family: "Liberation Serif", serif;
+	font-style: normal;
+	font-weight: normal;
+	text-indent: 20px;
+	}
+
+/********************* Элементы текста: *******************/
+.hid	{
+	display: none;
+	}
+
+br	{
+	margin: 10px;}
+
+h1	{
+	text-align: center;
+	margin: 20px; padding: 0px;
+	letter-spacing: 3pt; font-size: 160%;}
+
+h2	{
+	text-align: center;
+	margin: 10px; padding: 0px;
+	letter-spacing: 1pt;  font-size: 140%;}
+
+h3	{
+	text-align: left; font-style: italic;
+	margin: 5px; padding: 0px; font-size: 120%;}
+
+h4, h5, h6 {
+	text-align: left; font-style: italic; font-size: 100%;
+	margin: 0px; padding: 0px;}
+
+#leftbox {
+	position: fixed; top: 40px; left: 40px; bottom: 40px;
+	overflow: auto; height: 100%; width: 30%;
+	/*text-align: left;*/
+	}
+
+#rightbox {
+	position: fixed; top: 40px; right: 40px; bottom: 40px;
+	overflow: auto; height: 100%; width: 30%;
+	/*text-align: right;*/
+	}
+
+#midbox {
+	position: fixed; top: 40px; left: 35%; right: 35%; bottom: 40px;
+	width: 30%; height: 100%; overflow: auto; padding: 2px;
+	text-align: center; 
+	}
+
+#img	{
+	width:400px; height: 300px;
+	background: url(http://zserv.sao.ru/webcam/livecam.cgi?0&1) no-repeat; 
+	}
+
+#centertext {
+	position: fixed; bottom: 35%; left: 35%; right: 35%; top: 35%; height: 30%; width: 30%;
+	vertical-align: middle; text-align: center; padding: 2px; overflow: auto;
+	}
+
+div	{
+	text-align: justify; padding: 2px;
+	}
+
+#subscript {
+	text-align: right; font-style: italic;
+	font-size: 70%; position: fixed; bottom:0px; right: 40px;
+	left: 40px; }
+
+#bottext {
+	position: fixed; bottom: 0px; left: 40px; right: 40px;
+	padding: 0px; text-align: center;
+	}
+/********************* Замена фреймам *************/
+
+.fullwidth{
+	width: 100%;
+	}
+
+.boldstring{
+	text-align: right; font-weight: bold;
+	}
+
+.ralign{
+	text-align: right;
+}
+
+/********************* Таблицы: *******************/
+
+table	{
+	text-align: center;
+	margin: 0px; padding: 0px;
+	}
+
+
+/******************* Рамка вокруг страницы: *******************/
+
+#top	{
+	position: fixed; top: 0px; left: 40px; right: 40px;
+	height: 40px; /* width: 100%;*/
+	text-align: center; padding: 0px;
+	background: url(/images/top.png) repeat-x;
+	}
+
+#bottom	{
+	position: fixed; bottom: 0px; left: 40px; right: 40px;
+	padding: 0px; height: 40px; /* width: 100%;*/
+	text-align: center;
+	background: url(/images/bottom.png) repeat-x;
+	}
+
+#left	{
+	position: fixed; top: 40px; left: 0px; bottom: 40px;
+	width: 40px; /* height: 100%;*/
+	text-align: left; padding: 0px;
+	background: url(/images/left.png) repeat-y;
+	}
+
+#right	{
+	position: fixed; top: 40px; right: 0px; bottom:40px;
+	width: 40px; /*	height: 100%;*/
+	text-align: left; padding: 0px;
+	background: url(/images/right.png) repeat-y;
+	}
+
+#topleft {
+	position: fixed; top: 0px; left: 0px;
+	width: 40px; height: 40px; padding: 0px;
+	background: url(/images/topleft.png) no-repeat;
+	}
+
+#botleft {
+	position: fixed; bottom: 0px; left: 0px;
+	width: 40px; height: 40px; padding: 0px;
+	background: url(/images/botleft.png) no-repeat;
+	}
+
+#topright {
+	position: fixed; top: 0px; right: 0px;
+	width: 40px; height: 40px; padding: 0px;
+	background: url(/images/topright.png) no-repeat;
+	}
+
+#botright {
+	position: fixed; bottom: 0px; right: 0px;
+	width: 40px; height: 40px; padding: 0px;
+	background: url(/images/botright.png) no-repeat;
+	}
+
